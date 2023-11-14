@@ -1,3 +1,8 @@
+:root{
+    --white: #fff;
+    scroll-behavior: smooth;
+}
+
 html{
     font-size: 62.5%;
     box-sizing: border-box;
@@ -10,4 +15,95 @@ html{
 body{
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
 }
+
+img{
+    display: block;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 90%;
+    max-width: 120rem;
+    margin: auto;
+    overflow: hidden;
+    padding: 6rem 0;
+}
+
+header{
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(161, 140, 209, 0.40) 0%, rgba(251, 194, 235, 0.40) 100%), url(../img/woman.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.head{
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--white)
+}
+
+.title{
+    font-size: 6rem;
+    margin-bottom: 1rem;
+}
+
+.copy{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+
+.hamburguer{
+    position: fixed;
+    top: 3rem;
+    right: 3rem;
+    background: var(--white);
+    height: 4rem;
+    width: 4rem;
+    cursor: pointer;
+    border-radius: 1rem;
+
+}
+
+.nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30vw;
+    height: 100%;
+    background-image: linear-gradient(120deg, #a6c0fe 20%, #f68084 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: transform, 0.3s, ease-in-out;
+    transform: translate(110%);
+
+}
+
+.nav a{
+    color: var(--white);
+}
+
+.spread{
+    transform: translate(0);
+}
+
+
+
+/* .nav:hover{
+    transform: translate(110%);
+} */
