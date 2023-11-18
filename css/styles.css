@@ -209,6 +209,72 @@ header{
     transform: scale(1);
 }
 
+/*Experts*/
+.experts{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.n-expert{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+/*footer*/
+.footer{
+    background-color: var(--light-purple);
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+}
+
+.brand{
+    font-weight: 500;
+    font-size: 4rem;
+    margin: 0;
+}
+
+.brand+p{
+    font-weight: 500;
+}
+
+.social-media{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-media-icon{
+    display: inline-block;
+    margin-left: 2rem;
+    width: 6rem;
+    height: 6rem;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.social-media-icon:hover{
+    background-color: var(--white);
+    color: #764ba2;
+}
+
+.social-media-icon i{
+    font-size: 3rem;
+    line-height: 6rem;
+    color: var(--white);
+}
+
+.social-media-icon i:hover{
+    color: var(--light-purple);
+}
 
 /* .nav:hover{
     transform: translate(110%);
